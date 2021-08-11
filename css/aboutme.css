@@ -1,0 +1,55 @@
+.about-me {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    margin-top: -10%;
+}
+.about-me-p {
+    text-align: center;
+    color: white;
+    font-size: large;
+    margin: 10px;
+}
+@media only screen and (max-width: 1200px) {
+    .logo img {
+        width: 35%;
+        position: relative;
+        visibility: hidden;
+    }
+    @keyframes MoveUpDown {
+        0%, 100% {
+          bottom: 65%;
+          margin-left: 50%;
+        }
+        50% {
+          bottom: 63%;
+          margin-left: 50%;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .logo img {
+            width: 35%;
+            position: relative;
+            visibility: hidden;
+        }
+        h1 {
+            text-align: center;
+        }
+        .discord-server {
+            margin-top: 20%;
+        }
+        .navbar {
+            font-size: x-large;
+        }
+        @keyframes MoveUpDown {
+            0%, 100% {
+              bottom: 35%;
+              margin-left: 150px;
+            }
+            50% {
+              bottom: 33%;
+
+            }
+          }
+    }
+}

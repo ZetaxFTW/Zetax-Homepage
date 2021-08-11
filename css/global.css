@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+:root {
+    --blue: rgb(0, 102, 255);
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: #111111;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.active {
+    color: var(--blue) !important;
+}
+.active:hover {
+    color: var(--blue) !important;
+    cursor: pointer;
+}
+.navbar {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+.navbar a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: rgb(165, 165, 165);
+}
+.navbar a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(212, 212, 212);
+}
+@keyframes color-change {
+    0% { color: var(--blue); }
+    50% { color: rgb(255, 0, 0); }
+    100% { color: var(--blue); }
+  }
+.future {
+    animation: color-change 5s infinite;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.future:hover {
+    color: var(--blue) !important;
+    cursor: pointer;
+    top: -5px;
+}
+.title-1 {
+    text-align: center;
+    color: white;
+}
+.title-2 {
+    padding: 5%;
+    color: white;
+    font-size: x-large;
+}
+.logo img {
+    width: 100px;
+}
+.logo {
+    margin: -2.5%;
+    animation: MoveUpDown 1.5s linear infinite;
+    position: absolute;
+    cursor: not-allowed;
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 85%;
+      margin-left: 85%;
+    }
+    50% {
+      bottom: 84%;
+      margin-left: 85%;
+    }
+  }
+@media only screen and (max-width: 1200px) {
+    .logo img {
+        width: 35%;
+        position: relative;
+    }
+    @keyframes MoveUpDown {
+        0%, 100% {
+          bottom: 65%;
+          margin-left: 50%;
+        }
+        50% {
+          bottom: 63%;
+          margin-left: 50%;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .logo img {
+            width: 35%;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+        }
+        .discord-server {
+            margin-top: 20%;
+        }
+        .navbar {
+            font-size: x-large;
+        }
+        @keyframes MoveUpDown {
+            0%, 100% {
+              bottom: 7%;
+              margin-left: 150px;
+            }
+            50% {
+              bottom: 5%;
+
+            }
+          }
+    }
+}
